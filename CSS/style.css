@@ -24,6 +24,20 @@ main {
     align-items: center;
     height: 80vh;
 }
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(106, 90, 205, 0.8);
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.back-button:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
 
 .button-container {
     display: grid;
