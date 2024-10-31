@@ -3,15 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zornioz-Lernplattform</title>
+    <title>Zornioz-Lernplattform - OSI-Schichtenmodell</title>
     <link rel="stylesheet" href="/OOC/CSS/style.css">
 </head>
 <body>
     <header>
         <a href="/OOC/HTML/Netzwerktechnik/kapitelauswahl.html" class="back-button">Zurück</a>
-        <h1>Kapitel 2</h1>
-        <p>Netzwerktechnik - OSI und TCP Modell</p>
+        <h1>Kapitel 2: OSI-Schichtenmodell</h1>
+        <p>Das OSI-Schichtenmodell ist ein konzeptionelles Framework, das die Kommunikation in Netzwerken in sieben Schichten unterteilt. Es hilft, die verschiedenen Funktionen der Netzwerktechnologie zu verstehen.</p>
     </header>
+
+    <main>
+        <section class="chapter">
+            <h2>Die 7 Schichten</h2>
+            <ol>
+                <li>
+                    <strong>Physical Layer (Physikalische Schicht)</strong>
+                    <p>Über das Kabel, das ihr in der Firma gesehen habt, werden die Daten binär übertragen. Dies bedeutet, dass elektrische Signale (bei Kupferkabeln) oder Lichtimpulse (bei Glasfaserkabeln) genutzt werden, um die Daten als Einsen und Nullen zu übertragen.</p>
+                </li>
+                <li>
+                    <strong>Data Link Layer (Datenlink-Schicht)</strong>
+                    <p>Stellt sicher, dass die Daten fehlerfrei von einem Gerät zum nächsten übertragen werden. Hierbei werden MAC-Adressen verwendet, um Geräte innerhalb eines lokalen Netzwerks zu identifizieren.</p>
+                </li>
+                <li>
+                    <strong>Network Layer (Netzwerkschicht)</strong>
+                    <p>Diese Schicht ist für die logische Adressierung und Routing zuständig. Hier kommen IP-Adressen ins Spiel, die verwendet werden, um Geräte im Internet zu identifizieren.</p>
+                </li>
+                <li>
+                    <strong>Transport Layer (Transportschicht)</strong>
+                    <p>Diese Schicht kümmert sich um die zuverlässige Übertragung von Daten zwischen Endpunkten. Hier werden Protokolle wie TCP und UDP verwendet.</p>
+                </li>
+                <li>
+                    <strong>Session Layer (Sitzungsschicht)</strong>
+                    <p>Diese Schicht verwaltet die Kommunikation zwischen Anwendungen. Hier werden Session-IDs verwendet, um die Identität einer Sitzung zu verfolgen.</p>
+                </li>
+                <li>
+                    <strong>Presentation Layer (Darstellungsschicht)</strong>
+                    <p>Hier wird sichergestellt, dass die Daten in einem verständlichen Format präsentiert werden. Diese Schicht kümmert sich um Datenformatierungen wie JSON, XML oder HTML.</p>
+                </li>
+                <li>
+                    <strong>Application Layer (Anwendungsschicht)</strong>
+                    <p>Diese oberste Schicht ermöglicht den Zugriff auf Netzwerkanwendungen. Hier arbeiten Protokolle wie HTTP, FTP und SMTP.</p>
+                </li>
+            </ol>
+
+            <h3>Wichtige Protokolle und Werte</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Schicht</th>
+                        <th>Wichtige Werte</th>
+                        <th>Protokolle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1. Physical Layer</td>
+                        <td>- Elektrische Signale<br>- Lichtimpulse</td>
+                        <td>- Keine spezifischen Protokolle</td>
+                    </tr>
+                    <tr>
+                        <td>2. Data Link Layer</td>
+                        <td>- MAC-Adressen <br> - A1:B2:34:C3:D4:E5</td>
+                        <td>- Ethernet<br>- PPP</td>
+                    </tr>
+                    <tr>
+                        <td>3. Network Layer</td>
+                        <td>- IP-Adressen <br> - 192.168.1.1</td>
+                        <td>- IP<br>- ICMP</td>
+                    </tr>
+                    <tr>
+                        <td>4. Transport Layer</td>
+                        <td>- Ports</td>
+                        <td>- TCP<br>- UDP</td>
+                    </tr>
+                    <tr>
+                        <td>5. Session Layer</td>
+                        <td>- Session-IDs</td>
+                        <td>- RPC<br>- SMB</td>
+                    </tr>
+                    <tr>
+                        <td>6. Presentation Layer</td>
+                        <td>- Datenformate</td>
+                        <td>- TLS<br>- SSL</td>
+                    </tr>
+                    <tr>
+                        <td>7. Application Layer</td>
+                        <td>- Benutzeranfragen</td>
+                        <td>- HTTP<br>- FTP<br>- SMTP</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Lernplattform</p>
