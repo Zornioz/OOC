@@ -127,12 +127,33 @@ footer {
 table {
     width: 100%; /* Tabelle nimmt 100% der Breite ein */
     border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.1); /* Leicht transparenter Hintergrund für die Tabelle */
 }
 
-th, td {
-    padding: 10px; /* Weniger Padding für kleinere Bildschirme */
-    font-size: 0.85em; /* Kleinere Schriftgröße für mobile Geräte */
+th {
+    background-color: rgba(106, 90, 205, 0.8); /* Farbe für den Tabellenkopf */
+    color: #ffffff; /* Textfarbe für den Kopf */
+    padding: 10px; /* Padding für die Kopfzeilen */
+    text-align: left; /* Text linksbündig */
+    font-size: 1.1em; /* Größere Schriftgröße für den Kopf */
 }
+
+td {
+    background-color: rgba(255, 255, 255, 0.2); /* Farbe für die Datenzellen */
+    color: #ffffff; /* Textfarbe für die Zellen */
+    padding: 10px; /* Padding für die Zellen */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Untere Grenze für die Zellen */
+}
+
+/* Alternierende Zeilenfarbe für bessere Lesbarkeit */
+tr:nth-child(even) td {
+    background-color: rgba(255, 255, 255, 0.15); /* Farbton für gerade Zeilen */
+}
+
+tr:hover td {
+    background-color: rgba(106, 90, 205, 0.6); /* Hover-Effekt für die Zellen */
+}
+
 
 @media (max-width: 600px) {
     header {
