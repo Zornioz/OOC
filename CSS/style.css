@@ -117,55 +117,40 @@ footer {
     transform: rotateY(0deg);
 }
 
+.table-container {
+    overflow-x: auto; /* Ermöglicht horizontales Scrollen */
+    margin: 0 20px; /* Etwas Abstand vom Rand */
+}
+
 table {
-    width: 100%;
+    width: 100%; /* Tabelle nimmt 100% der Breite ein */
     border-collapse: collapse;
-    margin: 20px 0;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #ffffff;
 }
 
 th, td {
-    padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px; /* Weniger Padding für kleinere Bildschirme */
+    font-size: 0.85em; /* Kleinere Schriftgröße für mobile Geräte */
 }
 
-th {
-    background-color: rgba(106, 90, 205, 0.8);
-    color: #ffffff;
-    font-size: 1.2em;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-
-tr:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-
-/* Media Queries für mobile Geräte */
 @media (max-width: 600px) {
     header {
         padding: 50px 10px 20px; /* Weniger Padding für kleine Bildschirme */
     }
 
     h1 {
-        font-size: 2em; /* Kleinere Schriftgröße */
-    }
-
-    main {
-        padding: 10px; /* Weniger Padding im Main-Bereich */
-    }
-
-    .back-button {
-        padding: 8px 12px; /* Kleinere Buttons */
-    }
-
-    .button {
-        padding: 10px; /* Kleinere Buttons für Mobilgeräte */
+        font-size: 1.8em; /* Kleinere Schriftgröße für H1 */
     }
 
     p {
         font-size: 0.9em; /* Kleinere Schriftgröße für Paragraphen */
+        line-height: 1.4; /* Erhöht die Zeilenhöhe für bessere Lesbarkeit */
+    }
+
+    .back-button, .button {
+        padding: 8px 12px; /* Kleinere Buttons für mobile Geräte */
+    }
+
+    .button-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Kleinere Buttons */
     }
 }
