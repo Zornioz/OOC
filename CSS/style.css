@@ -22,7 +22,7 @@ main {
     display: flex;
     flex-direction: column; /* Für mobile Geräte in einer Spalte anordnen */
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: auto; /* Höhe anpassen */
     padding: 20px;
 }
