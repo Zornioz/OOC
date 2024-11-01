@@ -137,8 +137,9 @@ th, td {
         padding: 50px 10px 20px; /* Weniger Padding für kleine Bildschirme */
     }
 
-    h1 {
-        font-size: 1.8em; /* Kleinere Schriftgröße für H1 */
+   h1, h2, h3, h4, h5, h6 {
+        margin-left: 15px; /* Anpassung für mobile Geräte */
+        margin-right: 15px; /* Anpassung für mobile Geräte */
     }
 
     p {
