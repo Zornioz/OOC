@@ -12,7 +12,28 @@
         <h1>Karteikarten- Datenbanken</h1>
     </header>
 
-<div id="cards-container"></div>
+    <div class="card-container" id="cardContainer">
+        <div class="card" id="card">
+            <div class="card-content" id="questionContainer">
+                <h2>Frage</h2>
+                <p id="question">Lade Frage...</p>
+            </div>
+            <div class="card-answer" id="answerContainer" style="display: none;">
+                <h2>Antwort</h2>
+                <p id="answer">Lade Antwort...</p>
+            </div>
+        </div>
+        <div class="button-container" id="navigationButtons">
+            <button id="prevButton" onclick="prevCard()">Zurück</button>
+            <button id="nextButton" onclick="nextCard()">Nächste Karte</button>
+            <button id="overviewButton" onclick="showOverview()">Übersicht</button>
+        </div>
+    </div>
+    <div class="overview-container" id="overviewContainer" style="display: none;">
+        <h2>Übersicht der Karten</h2>
+        <ul id="overviewList"></ul>
+        <button onclick="hideOverview()">Zurück zur Karte</button>
+    </div>
 
 <script src="/OOC/JS/lk-datenbanken.js"></script>
 </body>

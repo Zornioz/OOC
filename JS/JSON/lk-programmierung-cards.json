@@ -1,0 +1,22 @@
+[
+    {
+        "question": "Was ist die Hauptstadt von Deutschland?",
+        "answer": "Berlin"
+    },
+    {
+        "question": "Was ist die größte Stadt der USA?",
+        "answer": "New York City"
+    },
+    {
+        "question": "Was ist die Hauptstadt von Frankreich?",
+        "answer": "Paris"
+    },
+    {
+        "question": "Was ist die Hauptstadt von Italien?",
+        "answer": "Rom"
+    },
+    {
+        "question": "Was ist die größte Stadt in Australien?",
+        "answer": "Sydney"
+    }
+]
